@@ -1,0 +1,95 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:incoterm,active:"
+msgid "Active"
+msgstr "Actiu"
+
+msgctxt "field:incoterm,category:"
+msgid "Category"
+msgstr "Categoria"
+
+msgctxt "field:incoterm,code:"
+msgid "Code"
+msgstr "Codi"
+
+msgctxt "field:incoterm,create_date:"
+msgid "Create Date"
+msgstr "Data de creació"
+
+msgctxt "field:incoterm,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:incoterm,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:incoterm,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:incoterm,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:incoterm,write_date:"
+msgid "Write Date"
+msgstr "Data modificación"
+
+msgctxt "field:incoterm,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:incoterm.category,create_date:"
+msgid "Create Date"
+msgstr "Data de creació"
+
+msgctxt "field:incoterm.category,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:incoterm.category,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:incoterm.category,name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:incoterm.category,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:incoterm.category,write_date:"
+msgid "Write Date"
+msgstr "Data modificación"
+
+msgctxt "field:incoterm.category,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "model:incoterm,name:"
+msgid "Incoterm"
+msgstr "Incoterm"
+
+msgctxt "model:incoterm.category,name:"
+msgid "Incoterm Category"
+msgstr "Categoria Incoterm"
+
+msgctxt "view:incoterm.category:"
+msgid "Incoterm Categories"
+msgstr "Categories d'incoterm"
+
+msgctxt "view:incoterm.category:"
+msgid "Incoterm Category"
+msgstr "Categoria d'incoterm"
+
+msgctxt "view:incoterm:"
+msgid "Incoterm"
+msgstr "Incoterm"
+
+msgctxt "view:incoterm:"
+msgid "Incoterms"
+msgstr "Incoterms"
