@@ -30,6 +30,21 @@
             <field name="view" ref="category_view_form"/>
             <field name="act_window" ref="act_category_form"/>
         </record>
+        <record model="ir.model.access" id="access_incoterm_category">
+            <field name="model" search="[('model', '=', 'incoterm.category')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_incoterm_category_admin">
+            <field name="model" search="[('model', '=', 'incoterm.category')]"/>
+            <field name="group" ref="party.group_party_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
         <menuitem parent="menu_incoterm" action="act_category_form"
             id="menu_category_form"/>
 
@@ -56,6 +71,21 @@
             <field name="sequence" eval="20"/>
             <field name="view" ref="incoterm_view_form"/>
             <field name="act_window" ref="act_incoterm_form"/>
+        </record>
+        <record model="ir.model.access" id="access_incoterm">
+            <field name="model" search="[('model', '=', 'incoterm')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_incoterm_admin">
+            <field name="model" search="[('model', '=', 'incoterm')]"/>
+            <field name="group" ref="party.group_party_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
         </record>
         <menuitem parent="menu_incoterm" action="act_incoterm_form"
             id="menu_incoterm_form"/>
