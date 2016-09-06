@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:incoterm,active:"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "field:incoterm,category:"
+msgid "Category"
+msgstr "Kategorie"
+
+msgctxt "field:incoterm,code:"
+msgid "Code"
+msgstr "Code"
+
+msgctxt "field:incoterm,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:incoterm,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:incoterm,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:incoterm,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:incoterm,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:incoterm,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:incoterm,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:incoterm.category,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:incoterm.category,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:incoterm.category,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:incoterm.category,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:incoterm.category,rec_name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:incoterm.category,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:incoterm.category,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "model:incoterm,name:"
+msgid "Incoterm"
+msgstr "Incoterm"
+
+msgctxt "model:incoterm,name:incoterm_cfr"
+msgid "Cost and Freight"
+msgstr "Kosten und Fracht"
+
+msgctxt "model:incoterm,name:incoterm_cif"
+msgid "Cost, Insurance and Freight"
+msgstr "Kosten, Versicherung und Fracht bis zum Bestimmungshafen"
+
+msgctxt "model:incoterm,name:incoterm_cip"
+msgid "Carriage and Insurance Paid To"
+msgstr "Fracht und Versicherung bezahlt"
+
+msgctxt "model:incoterm,name:incoterm_cpt"
+msgid "Carriage Paid To"
+msgstr "Fracht bezahlt bis"
+
+msgctxt "model:incoterm,name:incoterm_dap"
+msgid "Delivered at Place"
+msgstr "geliefert benannter Ort"
+
+msgctxt "model:incoterm,name:incoterm_dat"
+msgid "Delivered at terminal"
+msgstr "geliefert Terminal"
+
+msgctxt "model:incoterm,name:incoterm_ddp"
+msgid "Delivered Duty Paid"
+msgstr "geliefert Zoll bezahlt"
+
+msgctxt "model:incoterm,name:incoterm_exw"
+msgid "Ex Works"
+msgstr "ab Werk"
+
+msgctxt "model:incoterm,name:incoterm_fas"
+msgid "Free Alongside Ship"
+msgstr "frei längsseits Schiff"
+
+msgctxt "model:incoterm,name:incoterm_fca"
+msgid "Free Carrier"
+msgstr "frei Frachtführer"
+
+msgctxt "model:incoterm,name:incoterm_fob"
+msgid "Free on Board"
+msgstr "frei an Bord"
+
+msgctxt "model:incoterm.category,name:"
+msgid "Incoterm Category"
+msgstr "Incoterm Kategorie"
+
+msgctxt "model:incoterm.category,name:incoterm_2010"
+msgid "Incoterms 2010"
+msgstr "Incoterms 2010"
+
+msgctxt "model:ir.action,name:act_category_form"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "model:ir.action,name:act_incoterm_form"
+msgid "Incoterms"
+msgstr "Incoterms"
+
+msgctxt "model:ir.ui.menu,name:menu_category_form"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "model:ir.ui.menu,name:menu_incoterm"
+msgid "Incoterms"
+msgstr "Incoterms"
+
+msgctxt "model:ir.ui.menu,name:menu_incoterm_form"
+msgid "Incoterms"
+msgstr "Incoterms"
