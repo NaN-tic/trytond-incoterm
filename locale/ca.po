@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -24,7 +24,7 @@ msgstr "Usuari de creació"
 
 msgctxt "field:incoterm,id:"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "field:incoterm,name:"
 msgid "Name"
@@ -36,7 +36,7 @@ msgstr "Nom"
 
 msgctxt "field:incoterm,write_date:"
 msgid "Write Date"
-msgstr "Data modificación"
+msgstr "Data de modificació"
 
 msgctxt "field:incoterm,write_uid:"
 msgid "Write User"
@@ -52,7 +52,7 @@ msgstr "Usuari de creació"
 
 msgctxt "field:incoterm.category,id:"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "field:incoterm.category,name:"
 msgid "Name"
@@ -64,7 +64,7 @@ msgstr "Nom"
 
 msgctxt "field:incoterm.category,write_date:"
 msgid "Write Date"
-msgstr "Data modificación"
+msgstr "Data de modificació"
 
 msgctxt "field:incoterm.category,write_uid:"
 msgid "Write User"
@@ -74,9 +74,77 @@ msgctxt "model:incoterm,name:"
 msgid "Incoterm"
 msgstr "Incoterm"
 
+msgctxt "model:incoterm,name:incoterm_cfr"
+msgid "Cost and Freight"
+msgstr "Cost i càrrega"
+
+msgctxt "model:incoterm,name:incoterm_cif"
+msgid "Cost, Insurance and Freight"
+msgstr "Cost, assegurança i càrrega"
+
+msgctxt "model:incoterm,name:incoterm_cip"
+msgid "Carriage and Insurance Paid To"
+msgstr "Transport i assegurança pagat fins"
+
+msgctxt "model:incoterm,name:incoterm_cpt"
+msgid "Carriage Paid To"
+msgstr "Transport pagat fins"
+
+msgctxt "model:incoterm,name:incoterm_dap"
+msgid "Delivered at Place"
+msgstr "Entrega a lloc"
+
+msgctxt "model:incoterm,name:incoterm_dat"
+msgid "Delivered at terminal"
+msgstr "Entrega a la terminal"
+
+msgctxt "model:incoterm,name:incoterm_ddp"
+msgid "Delivered Duty Paid"
+msgstr "Entrega drets d'aduana pagats"
+
+msgctxt "model:incoterm,name:incoterm_exw"
+msgid "Ex Works"
+msgstr "Ex Works"
+
+msgctxt "model:incoterm,name:incoterm_fas"
+msgid "Free Alongside Ship"
+msgstr "Gratuit al costat del vaixell"
+
+msgctxt "model:incoterm,name:incoterm_fca"
+msgid "Free Carrier"
+msgstr "Gratuit transport"
+
+msgctxt "model:incoterm,name:incoterm_fob"
+msgid "Free on Board"
+msgstr "Gratuit a bord"
+
 msgctxt "model:incoterm.category,name:"
 msgid "Incoterm Category"
 msgstr "Categoria Incoterm"
+
+msgctxt "model:incoterm.category,name:incoterm_2010"
+msgid "Incoterms 2010"
+msgstr "Incoterms 2010"
+
+msgctxt "model:ir.action,name:act_category_form"
+msgid "Categories"
+msgstr "Categories"
+
+msgctxt "model:ir.action,name:act_incoterm_form"
+msgid "Incoterms"
+msgstr "Incoterms"
+
+msgctxt "model:ir.ui.menu,name:menu_category_form"
+msgid "Categories"
+msgstr "Categories"
+
+msgctxt "model:ir.ui.menu,name:menu_incoterm"
+msgid "Incoterms"
+msgstr "Incoterms"
+
+msgctxt "model:ir.ui.menu,name:menu_incoterm_form"
+msgid "Incoterms"
+msgstr "Incoterms"
 
 msgctxt "view:incoterm.category:"
 msgid "Incoterm Categories"
