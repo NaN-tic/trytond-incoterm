@@ -1,11 +1,13 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 from trytond.pool import Pool
-from .incoterm import *
+from . import incoterm
+from . import party
 
 
 def register():
     Pool.register(
-        Category,
-        Incoterm,
+        incoterm.Category,
+        incoterm.Incoterm,
+        party.Party,
         module='incoterm', type_='model')

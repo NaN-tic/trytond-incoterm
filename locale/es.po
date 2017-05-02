@@ -70,6 +70,14 @@ msgctxt "field:incoterm.category,write_uid:"
 msgid "Write User"
 msgstr "Usuario de modificación"
 
+msgctxt "field:party.party,incoterm:"
+msgid "Incoterm"
+msgstr "Incoterm"
+
+msgctxt "field:party.party,incoterm_place:"
+msgid "Incoterm Name Place"
+msgstr "Nombre lugar incoterm"
+
 msgctxt "model:incoterm,name:"
 msgid "Incoterm"
 msgstr "Incoterm"
@@ -161,3 +169,7 @@ msgstr "Incoterm"
 msgctxt "view:incoterm:"
 msgid "Incoterms"
 msgstr "Incoterms"
+
+msgctxt "view:party.party:"
+msgid "Incoterm"
+msgstr "Incoterm"
