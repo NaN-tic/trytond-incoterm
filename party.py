@@ -5,7 +5,7 @@ from trytond.pool import PoolMeta, Pool
 from trytond.model import fields, ModelSQL, ValueMixin
 from trytond.tools.multivalue import migrate_property
 
-__all__ = ['Party']
+__all__ = ['Party', 'PartyIncoterm']
 
 incoterm = fields.Many2One('incoterm', 'Incoterm')
 incoterm_place = fields.Char('Incoterm Name Place')
@@ -20,7 +20,7 @@ class Party:
     @classmethod
     def multivalue_model(cls, field):
         pool = Pool()
-        if field in {'incoterm'}:
+        if field in {'incoterm', 'incoterm_place'}:
             return pool.get('party.party.incoterm')
         return super(Party, cls).multivalue_model(field)
 

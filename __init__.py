@@ -10,4 +10,5 @@ def register():
         incoterm.Category,
         incoterm.Incoterm,
         party.Party,
+        party.PartyIncoterm,
         module='incoterm', type_='model')
