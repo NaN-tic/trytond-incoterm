@@ -11,8 +11,7 @@ incoterm = fields.Many2One('incoterm', 'Incoterm')
 incoterm_place = fields.Char('Incoterm Name Place')
 
 
-class Party:
-    __metaclass__ = PoolMeta
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
     incoterm = fields.MultiValue(incoterm)
     incoterm_place = fields.MultiValue(incoterm_place)
