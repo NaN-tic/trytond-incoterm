@@ -10,4 +10,6 @@
     <field name="name"/>
     <label name="code"/>
     <field name="code"/>
+    <label name="place_required"/>
+    <field name="place_required"/>
 </form>
