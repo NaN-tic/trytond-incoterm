@@ -1,11 +1,12 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-
 from trytond import backend
 from trytond.pool import PoolMeta, Pool
-from trytond.model import fields, ModelSQL, ValueMixin
+from trytond.model import fields, ModelSQL
 from trytond.pyson import Eval, Bool
 from trytond.tools.multivalue import migrate_property
+from trytond.modules.company.model import (
+    CompanyMultiValueMixin, CompanyValueMixin)
 
 __all__ = ['Party', 'PartyIncoterm']
 
@@ -18,12 +19,10 @@ incoterm_place = fields.Char('Incoterm Name Place',
         depends=['place_required'])
 
 
-class Party(metaclass=PoolMeta):
+class Party(CompanyMultiValueMixin, metaclass=PoolMeta):
     __name__ = 'party.party'
     incoterm = fields.MultiValue(incoterm)
     incoterm_place = fields.MultiValue(incoterm_place)
-    incoterms = fields.One2Many(
-        'party.party.incoterm', 'party', "Incoterms")
     place_required = fields.Function(fields.Boolean('Place Required'),
         'on_change_with_place_required')
 
@@ -44,13 +43,13 @@ class Party(metaclass=PoolMeta):
         self.incoterm_place = None
 
 
-class PartyIncoterm(ModelSQL, ValueMixin):
+class PartyIncoterm(ModelSQL, CompanyValueMixin):
     "Party Payment Term"
     __name__ = 'party.party.incoterm'
     party = fields.Many2One(
         'party.party', "Party", ondelete='CASCADE', select=True)
     incoterm = incoterm
-    incoterm_place = incoterm_place
+    incoterm_place = fields.Char('Incoterm Name Place')
 
     @classmethod
     def __register__(cls, module_name):
