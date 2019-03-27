@@ -2,8 +2,10 @@
 # this repository contains the full copyright notices and license terms.
 from trytond import backend
 from trytond.pool import PoolMeta, Pool
-from trytond.model import fields, ModelSQL, ValueMixin
+from trytond.model import fields, ModelSQL
 from trytond.tools.multivalue import migrate_property
+from trytond.modules.company.model import (
+    CompanyMultiValueMixin, CompanyValueMixin)
 
 __all__ = ['Party', 'PartyIncoterm']
 
@@ -11,7 +13,7 @@ incoterm = fields.Many2One('incoterm', 'Incoterm')
 incoterm_place = fields.Char('Incoterm Name Place')
 
 
-class Party:
+class Party(CompanyMultiValueMixin):
     __metaclass__ = PoolMeta
     __name__ = 'party.party'
     incoterm = fields.MultiValue(incoterm)
@@ -25,7 +27,7 @@ class Party:
         return super(Party, cls).multivalue_model(field)
 
 
-class PartyIncoterm(ModelSQL, ValueMixin):
+class PartyIncoterm(ModelSQL, CompanyValueMixin):
     "Party Payment Term"
     __name__ = 'party.party.incoterm'
     party = fields.Many2One(
