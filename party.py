@@ -23,6 +23,7 @@ class Party(CompanyMultiValueMixin, metaclass=PoolMeta):
     __name__ = 'party.party'
     incoterm = fields.MultiValue(incoterm)
     incoterm_place = fields.MultiValue(incoterm_place)
+    incoterms = fields.One2Many('party.party.incoterm', 'party', "Incoterms")
     place_required = fields.Function(fields.Boolean('Place Required'),
         'on_change_with_place_required')
 
