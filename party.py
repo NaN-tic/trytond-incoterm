@@ -18,6 +18,7 @@ class Party(CompanyMultiValueMixin):
     __name__ = 'party.party'
     incoterm = fields.MultiValue(incoterm)
     incoterm_place = fields.MultiValue(incoterm_place)
+    incoterms = fields.One2Many('party.party.incoterm', 'party', "Incoterms")
 
     @classmethod
     def multivalue_model(cls, field):
