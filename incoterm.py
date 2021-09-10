@@ -1,6 +1,6 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView, ModelSQL, DeactivableMixin, fields
 
 __all__ = ['Category', 'Incoterm']
 
@@ -11,20 +11,14 @@ class Category(ModelSQL, ModelView):
     name = fields.Char('Name', required=True, translate=True)
 
 
-class Incoterm(ModelSQL, ModelView):
+class Incoterm(DeactivableMixin, ModelSQL, ModelView):
     'Incoterm'
     __name__ = 'incoterm'
-
     name = fields.Char('Name', required=True, translate=True)
     code = fields.Char('Code', required=True)
-    active = fields.Boolean('Active', select=True)
     category = fields.Many2One('incoterm.category', 'Category')
     place_required = fields.Boolean('Place required',
         help="Make place required for this incoterm")
-
-    @staticmethod
-    def default_active():
-        return True
 
     @staticmethod
     def default_place_required():
