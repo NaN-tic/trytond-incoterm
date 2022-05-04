@@ -48,7 +48,9 @@ class PartyIncoterm(ModelSQL, CompanyValueMixin):
     "Party Payment Term"
     __name__ = 'party.party.incoterm'
     party = fields.Many2One(
-        'party.party', "Party", ondelete='CASCADE', select=True)
+        'party.party', "Party", ondelete='CASCADE', select=True, context={
+            'company': Eval('company'),
+        }, depends=['company'])
     incoterm = incoterm
     incoterm_place = fields.Char('Incoterm Name Place')
 
