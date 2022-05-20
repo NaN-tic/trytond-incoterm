@@ -6,33 +6,7 @@
         <menuitem parent="ir.menu_administration" name="Incoterms"
               id="menu_incoterm"/>
 
-        <record model="ir.ui.view" id="category_view_tree">
-            <field name="model">incoterm.category</field>
-            <field name="type">tree</field>
-            <field name="name">category_list</field>
-        </record>
-        <record model="ir.ui.view" id="category_view_form">
-            <field name="model">incoterm.category</field>
-            <field name="type">form</field>
-            <field name="name">category_form</field>
-        </record>
-        <record model="ir.action.act_window" id="act_category_form">
-            <field name="name">Categories</field>
-            <field name="res_model">incoterm.category</field>
-        </record>
-        <record model="ir.action.act_window.view" id="act_category_form_view1">
-            <field name="sequence" eval="10"/>
-            <field name="view" ref="category_view_tree"/>
-            <field name="act_window" ref="act_category_form"/>
-        </record>
-        <record model="ir.action.act_window.view" id="act_category_form_view2">
-            <field name="sequence" eval="20"/>
-            <field name="view" ref="category_view_form"/>
-            <field name="act_window" ref="act_category_form"/>
-        </record>
-        <menuitem parent="menu_incoterm" action="act_category_form"
-            id="menu_category_form"/>
-
+        <!-- incoterm -->
         <record model="ir.ui.view" id="incoterm_view_tree">
             <field name="model">incoterm</field>
             <field name="type">tree</field>
@@ -60,75 +34,72 @@
         <menuitem parent="menu_incoterm" action="act_incoterm_form"
             id="menu_incoterm_form"/>
 
-        <!-- Incoterms 2010 -->
-        <record model="incoterm.category" id="incoterm_2010">
-            <field name="name">Incoterms 2010</field>
-        </record>
+        <!-- Incoterms data -->
         <record model="incoterm" id="incoterm_exw">
             <field name="name">Ex Works</field>
             <field name="code">EXW</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_fca">
             <field name="name">Free Carrier</field>
             <field name="code">FCA</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_cpt">
             <field name="name">Carriage Paid To</field>
             <field name="code">CPT</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_cip">
             <field name="name">Carriage and Insurance Paid To</field>
             <field name="code">CIP</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_dap">
             <field name="name">Delivered at Place</field>
             <field name="code">DAP</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
-        <record model="incoterm" id="incoterm_dat">
-            <field name="name">Delivered at terminal</field>
-            <field name="code">DAT</field>
-            <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+        <record model="incoterm" id="incoterm_dpu">
+          <field name="name">Delivered at Place Unloaded</field>
+          <field name="code">DPU</field>
+          <field name="place_required" eval="True"/>
+          <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_ddp">
-            <field name="name">Delivered Duty Paid</field>
-            <field name="code">DDP</field>
-            <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+          <field name="name">Delivered Duty Paid</field>
+          <field name="code">DDP</field>
+          <field name="place_required" eval="True"/>
+          <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_fas">
             <field name="name">Free Alongside Ship</field>
             <field name="code">FAS</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_fob">
             <field name="name">Free on Board</field>
             <field name="code">FOB</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_cfr">
             <field name="name">Cost and Freight</field>
             <field name="code">CFR</field>
             <field name="place_required" eval="True"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
         <record model="incoterm" id="incoterm_cif">
             <field name="name">Cost, Insurance and Freight</field>
             <field name="code">CIF</field>
             <field name="place_required" eval="False"/>
-            <field name="category" ref="incoterm_2010"/>
+            <field name="description">Incoterm 2020</field>
         </record>
     </data>
 </tryton>

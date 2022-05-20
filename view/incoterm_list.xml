@@ -4,6 +4,6 @@
 <tree>
     <field name="code"/>
     <field name="name"/>
-    <field name="category"/>
+    <field name="description"/>
     <field name="active" tree_invisible="1"/>
 </tree>
