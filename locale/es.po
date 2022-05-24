@@ -2,73 +2,21 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:incoterm,active:"
-msgid "Active"
-msgstr "Activo"
-
-msgctxt "field:incoterm,category:"
-msgid "Category"
-msgstr "Categoría"
-
 msgctxt "field:incoterm,code:"
 msgid "Code"
 msgstr "Código"
 
-msgctxt "field:incoterm,create_date:"
-msgid "Create Date"
-msgstr "Fecha de creación"
-
-msgctxt "field:incoterm,create_uid:"
-msgid "Create User"
-msgstr "Usuario de creación"
-
-msgctxt "field:incoterm,id:"
-msgid "ID"
-msgstr "ID"
+msgctxt "field:incoterm,description:"
+msgid "Description"
+msgstr "Descripción"
 
 msgctxt "field:incoterm,name:"
 msgid "Name"
 msgstr "Nombre"
 
-msgctxt "field:incoterm,rec_name:"
-msgid "Name"
-msgstr "Nombre"
-
-msgctxt "field:incoterm,write_date:"
-msgid "Write Date"
-msgstr "Fecha de modificación"
-
-msgctxt "field:incoterm,write_uid:"
-msgid "Write User"
-msgstr "Usuario de modificación"
-
-msgctxt "field:incoterm.category,create_date:"
-msgid "Create Date"
-msgstr "Fecha de creación"
-
-msgctxt "field:incoterm.category,create_uid:"
-msgid "Create User"
-msgstr "Usuario de creación"
-
-msgctxt "field:incoterm.category,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:incoterm.category,name:"
-msgid "Name"
-msgstr "Nombre"
-
-msgctxt "field:incoterm.category,rec_name:"
-msgid "Name"
-msgstr "Nombre"
-
-msgctxt "field:incoterm.category,write_date:"
-msgid "Write Date"
-msgstr "Fecha de modificación"
-
-msgctxt "field:incoterm.category,write_uid:"
-msgid "Write User"
-msgstr "Usuario de modificación"
+msgctxt "field:incoterm,place_required:"
+msgid "Place required"
+msgstr "Lugar obligatorio"
 
 msgctxt "field:party.party,incoterm:"
 msgid "Incoterm"
@@ -77,6 +25,34 @@ msgstr "Incoterm"
 msgctxt "field:party.party,incoterm_place:"
 msgid "Incoterm Name Place"
 msgstr "Nombre lugar incoterm"
+
+msgctxt "field:party.party,incoterms:"
+msgid "Incoterms"
+msgstr "Incoterms"
+
+msgctxt "field:party.party,place_required:"
+msgid "Place Required"
+msgstr "Lugar obligatorio"
+
+msgctxt "field:party.party.incoterm,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:party.party.incoterm,incoterm:"
+msgid "Incoterm"
+msgstr "Incoterm"
+
+msgctxt "field:party.party.incoterm,incoterm_place:"
+msgid "Incoterm Name Place"
+msgstr "Nombre lugar incoterm"
+
+msgctxt "field:party.party.incoterm,party:"
+msgid "Party"
+msgstr "Tercero"
+
+msgctxt "help:incoterm,place_required:"
+msgid "Make place required for this incoterm"
+msgstr "Lugar obligatorio para este incoterm"
 
 msgctxt "model:incoterm,name:"
 msgid "Incoterm"
@@ -102,13 +78,13 @@ msgctxt "model:incoterm,name:incoterm_dap"
 msgid "Delivered at Place"
 msgstr "Entrega a lugar"
 
-msgctxt "model:incoterm,name:incoterm_dat"
-msgid "Delivered at terminal"
-msgstr "Entrega a terminal"
-
 msgctxt "model:incoterm,name:incoterm_ddp"
 msgid "Delivered Duty Paid"
 msgstr "Entrega derechos duana pagados"
+
+msgctxt "model:incoterm,name:incoterm_dpu"
+msgid "Delivered at Place Unloaded"
+msgstr "Entregado en lugar descargado"
 
 msgctxt "model:incoterm,name:incoterm_exw"
 msgid "Ex Works"
@@ -126,25 +102,9 @@ msgctxt "model:incoterm,name:incoterm_fob"
 msgid "Free on Board"
 msgstr "Gratuito a bordo"
 
-msgctxt "model:incoterm.category,name:"
-msgid "Incoterm Category"
-msgstr "Categoría Incoterm"
-
-msgctxt "model:incoterm.category,name:incoterm_2010"
-msgid "Incoterms 2010"
-msgstr "Incoterms 2010"
-
-msgctxt "model:ir.action,name:act_category_form"
-msgid "Categories"
-msgstr "Categorías"
-
 msgctxt "model:ir.action,name:act_incoterm_form"
 msgid "Incoterms"
 msgstr "Incoterms"
-
-msgctxt "model:ir.ui.menu,name:menu_category_form"
-msgid "Categories"
-msgstr "Categorías"
 
 msgctxt "model:ir.ui.menu,name:menu_incoterm"
 msgid "Incoterms"
@@ -154,13 +114,9 @@ msgctxt "model:ir.ui.menu,name:menu_incoterm_form"
 msgid "Incoterms"
 msgstr "Incoterms"
 
-msgctxt "view:incoterm.category:"
-msgid "Incoterm Categories"
-msgstr "Categorias incoterm"
-
-msgctxt "view:incoterm.category:"
-msgid "Incoterm Category"
-msgstr "Categoria incoterm"
+msgctxt "model:party.party.incoterm,name:"
+msgid "Party Payment Term"
+msgstr "Plazo de pago del tercero"
 
 msgctxt "view:incoterm:"
 msgid "Incoterm"
