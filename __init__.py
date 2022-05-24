@@ -3,11 +3,8 @@
 from trytond.pool import Pool
 from . import incoterm
 from . import party
-
-
 def register():
     Pool.register(
-        incoterm.Category,
         incoterm.Incoterm,
         party.Party,
         party.PartyIncoterm,

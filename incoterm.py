@@ -2,27 +2,17 @@
 # this repository contains the full copyright notices and license terms.
 from trytond.model import ModelView, ModelSQL, DeactivableMixin, fields
 
-__all__ = ['Category', 'Incoterm']
-
-
-class Category(ModelSQL, ModelView):
-    'Incoterm Category'
-    __name__ = 'incoterm.category'
-    name = fields.Char('Name', required=True, translate=True)
+__all__ = ['Incoterm']
 
 
 class Incoterm(DeactivableMixin, ModelSQL, ModelView):
     'Incoterm'
     __name__ = 'incoterm'
-    name = fields.Char('Name', required=True, translate=True)
-    code = fields.Char('Code', required=True)
-    category = fields.Many2One('incoterm.category', 'Category')
-    place_required = fields.Boolean('Place required',
+    name = fields.Char("Name", required=True, translate=True)
+    code = fields.Char("Code", required=True)
+    description = fields.Char("Description")
+    place_required = fields.Boolean("Place required",
         help="Make place required for this incoterm")
-
-    @staticmethod
-    def default_place_required():
-        return False
 
     def get_rec_name(self, name):
         return '%s - %s' % (self.code, self.name)

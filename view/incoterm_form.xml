@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <!-- The COPYRIGHT file at the top level of this repository contains the full
       copyright notices and license terms. -->
-<form col="4">
-    <label name="category"/>
-    <field name="category" xexpand="1"/>
-    <label name="active"/>
-    <field name="active" xexpand="0" width="100"/>
+<form col="6">
     <label name="name"/>
     <field name="name"/>
     <label name="code"/>
     <field name="code"/>
+    <label name="active"/>
+    <field name="active" xexpand="0" width="100"/>
     <label name="place_required"/>
     <field name="place_required"/>
+    <label name="description"/>
+    <field name="description" xexpand="1"/>
 </form>
